@@ -11,17 +11,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 left-0 w-full z-50">
+    <nav className=" border-gray-200 bg-[#03000d] bg-opacity-70 backdrop-blur-xl fixed top-0 left-0 w-full z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         
+        <div className="flex flex-row items-center">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRza1uoGWnJI8AuPRFV_l9sLfAHnYdCyxtS4A&s"
+            className="h-8 rounded-md"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            TalentNet
+          <span className="self-center font-mono ml-2 text-3xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="font-serif text-blue-500 font-extrabold">T</span>alentNet
           </span>
+        </div>
+          
         <div className="flex md:order-2">
           <div className="relative hidden md:block">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -45,7 +48,7 @@ const Navbar = () => {
             <input
               type="text"
               id="search-navbar"
-              className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block w-full p-2 ps-10 text-sm text-gray-900 border border-blue-300 rounded-2xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search..."
             />
           </div>
@@ -80,7 +83,7 @@ const Navbar = () => {
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-search"
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
             <li>
             <Link smooth to='/home'> 
               <a
@@ -93,7 +96,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link smooth to=''>
+              <Link smooth to='/Services'>
               <a
                 href="#"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -145,7 +148,7 @@ const Navbar = () => {
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
-                      <Link smooth to='/Freelancer_Profile'>
+                      <Link smooth to='/freelancer_profile'>
                       <a
                         href="#"
                         className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
