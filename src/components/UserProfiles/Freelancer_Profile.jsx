@@ -113,13 +113,14 @@ const FreelancerProfile = () => {
                 <h2 class="text-2xl font-bold mb-4 text-white ">Previous Projects</h2>
                 <div class="overflow-y-auto h-64 grid grid-cols-1 scrollbar-hidden gap-4">
                       <div class="bg-slate-600 text-white font-semibold flex justify-between focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">1. SwiftPay Mobile Wallet</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
-                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">2. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
-                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">3. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
-                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">4. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
-                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">5. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
-                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">6. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
-                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">7. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
-                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">8. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
+                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">2. Pixel Art Generator</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
+                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">3. Horizon VR Explorer</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
+                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">4. Quantum File Encryptor</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
+                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">5. Solaris Health Tracker</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
+                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">6. EchoStream Analytics</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
+                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">7. Nimbus Task Manager</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
+                      <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">8. Neon Lights Social Network
+                      </a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
                     </div>
               </div>
               <div class="bg-black rounded-lg p-6 max-h-96 shadow-md  shadow-black text-white border border-green-400">
@@ -151,7 +152,7 @@ const FreelancerProfile = () => {
               </div>
             </div>
             <div class="bg-gray-900 rounded-lg p-6 mt-8 shadow-md shadow-black text-white">
-                <h2 class="text-2xl font-bold mb-4">Skills</h2>
+                <h2 class="text-2xl font-bold mb-4 text-tranparent bg-cli">Certifications</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
                   <div className='flex flex-row justify-around '>
 
