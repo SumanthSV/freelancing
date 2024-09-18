@@ -125,16 +125,17 @@ const userlist = [
 
 
 
-function Project_List() {
+function ProjectList() {
   return (
-    <div className="bg-gray-100 text-gray-900 mt-16">
-      <div className="container mx-auto p-4 w-11/12">
-        <h1 className="font-bold mb-6 text-center text-4xl text-blue-600">Projects</h1>
-        <div className="flex justify-between mb-6">
+    <div className="bg-black text-gray-900 ">
+      <div className="container mx-auto p-4 w-11/12 ">
+        <h1 className="font-bold mb-6 text-center mt-14 text-4xl text-blue-600">Projects</h1>
+        <div className="flex justify-between mb-6 ">
+          
           <input
             type="text"
             placeholder="Search for projects"
-            className="w-1/3 px-4 py-2 rounded-md border border-gray-300 focus:ring-blue-500 focus:ring-2"
+            className="w-1/3 px-4 py-2 rounded-md bg-gray-700 text-gray-200 border border-gray-900 focus:ring-blue-500 focus:ring-2"
           />
           <div className="flex items-center gap-2">
             <button
@@ -173,16 +174,16 @@ function Project_List() {
           </div>
         </div>
         {/* Center the table */}
-        <div className="bg-white rounded-lg shadow-md p-4">
+        <div className="bg-gray-900 text-white rounded-lg shadow-md p-4">
           <table className="w-full table-fixed text-sm text-left">
             <thead>
-              <tr className="border-b-2 border-gray-300">
-                <th className="p-3 w-1/12">Sl no.</th>
-                <th className="p-3 w-3/12">Project Name</th>
-                <th className="p-3 w-2/12">Project Owner</th>
-                <th className="p-3 w-2/12">Location</th>
-                <th className="p-3 w-2/12 text-center">Status</th>
-                <th className="p-3 w-2/12 text-center">Know More</th>
+              <tr className="border-b-2 border-gray-300 ">
+                <th className="p-3 w-1/12 border border-gray-400 rounded-lg mb-1 text-md text-center">Sl no.</th>
+                <th className="p-3 w-3/12 border border-gray-400 rounded-lg mb-1 text-md text-center">Project Name</th>
+                <th className="p-3 w-2/12 border border-gray-400 rounded-lg mb-1 text-md text-center">Project Owner</th>
+                <th className="p-3 w-2/12 border border-gray-400 rounded-lg mb-1 text-md text-center">Location</th>
+                <th className="p-3 w-2/12 border border-gray-400 rounded-lg mb-1 text-md  text-center">Status</th>
+                <th className="p-3 w-2/12 border border-gray-400 rounded-lg mb-1 text-md  text-center">Know More</th>
               </tr>
             </thead>
             <tbody>
@@ -192,10 +193,10 @@ function Project_List() {
                 return (
                   <tr
                     key={index}
-                    className="bg-white hover:bg-gray-100 shadow-sm shadow-black  transition-all duration-200 ease-in-out rounded-lg  mb-4 border-l-4 border-transparent hover:border-blue-500"
+                    className="bg-gray-900 hover:bg-gray-800 shadow-sm shadow-white transition-all duration-200 ease-in-out rounded-lg  mb-4 border-l-4 border-transparent hover:border-blue-500"
                   >
                     <td className="p-3 text-center">{index + 1}</td>
-                    <td className="p-3 flex items-center gap-3">
+                    <td className="p-3 flex items-center gap-3 ">
                       <img
                         src={user.image}
                         alt={user.projectowner}
@@ -228,6 +229,6 @@ function Project_List() {
   );
 }
 
-export default Project_List;
+export default ProjectList;
 
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import { div } from 'three/webgpu';
-import prog from '../utils/html.gif'
+
+import prog from './Blog.gif'
+
 const Categories = [
     {
       title: "Programming & Tech",
@@ -44,7 +45,7 @@ const Categories = [
 function Blogs() {
   return (
     <div className='h-100vh bg-black'>
-   <h2 className='text-transparent mt-10 text-center bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400" text-4xl font-bold mx-auto'>Popular Domains</h2>
+   <h2 className='text-transparent mt-10 text-center bg-clip-text bg-gradient-to-br from-white from-30% via-gray-500  to-blue-500 to-40%" text-4xl font-bold mx-auto'>Popular Domains</h2>
     <div className='relative flex overflow-x-hidden  rounded-2xl w-12/12'>
     
      
@@ -63,25 +64,6 @@ function Blogs() {
       </div>
       
     </div>
-
-    {/* Styling for infinite scroll */}
-    <style jsx>{`
-      .animate-scroll {
-        display: flex;
-        width: calc(100% * 2); 
-        animation: scroll-left 50s linear infinite;
-      }
-
-      @keyframes scroll-left {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-    `}</style>
-    
   </div>
   );
 }

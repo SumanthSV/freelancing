@@ -1,6 +1,17 @@
 import React from 'react';
-import master from '../Basepages/master.png'
-const Profile = () => {
+
+const items = [
+  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 1' },
+  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 2' },
+  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 3' },
+  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 3' },
+  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 3' },
+  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 3' },
+  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 3' },
+  // Add more items here...
+];
+
+const FreelancerProfile = () => {
   return (
     <div className='p-10 bg-[black]'>
       <body class=" text-gray-800 p-8">
@@ -29,52 +40,79 @@ const Profile = () => {
     </div>
 </div>
 </div>
-  <div class="bg-black text-white border border-green-400 rounded-lg p-6 shadow-md shadow-black col-span-3">
-    <h2 class="text-2xl font-bold mb-4 font-mono">General information</h2>
-    <h3 class="text-xl font-bold mb-2">About me</h3>
-    <p class="mb-4 font-sans italic">I am a dynamic and forward-thinking programmer with a strong commitment to staying updated with the latest trends and technologies. My approach is characterized by a deep understanding of fundamental concepts and a passion for continuous learning.</p>
-    <p class="mb-4 font-sans italic">I strive to leverage my skills and knowledge to tackle complex challenges and contribute to innovative projects. By staying current with industry advancements, I aim to deliver impactful solutions and drive progress in the ever-evolving tech landscape.</p>
+  <div class="bg-gradient-to-r from-gray-950 to-[#070005] text-white py-5 px-8 border border-green-400 rounded-lg  shadow-md shadow-black col-span-3">
+    
    
-   <div className='flex flex-row justify-around mt-2'>
+   <div className=''>
+
+
+   <div class="general-info  p-5 text-white">
+  <h2 class="text-2xl font-bold">User Bio</h2>
+
+  <div class="about-me p-4 bg-gray-400 bg-opacity-10 mt-4 rounded-md">
+    <h3 class="text-lg font-bold mt-0">About Me</h3>
+    <p>
+      I'm a passionate programmer with a focus on improving skills and goals. 
+      I thrive on tackling complex challenges and contributing to Open source aswell. 
+      My approach is driven by a strong understanding of fundamental concepts and a continuous desire to learn and grow. 
+    </p>
+  </div>
+
+  <div class="education p-4 bg-gray-400 bg-opacity-10 mt-5 rounded-md">
+    <h3 class="text-lg font-bold mt-0">Education</h3>
+    <p class="flex justify-between items-center">
+      <span>
+        <i class="fas fa-graduation-cap text-yellow-400 mr-2"></i> 
+        ⚪Thomas Jeff High School, Stanford University
+      </span>
+      <span class="flex items-center">
+        <i class="fas fa-calendar-alt text-yellow-400 mr-2"></i>
+        Join Date: 12-09-2021
+      </span>
+    </p>
+
+    <p class="mt-1">
+      <i class="fas fa-building text-yellow-400 mr-2"></i>
+      ⚪Organization: Themesberg LLC
+    </p>
+
+    <p class="mt-1">
+      <i class="fas fa-user-tie text-yellow-400 mr-2"></i>
+      ⚪Department: Marketing
+    </p>
+  </div>
+
+  <div class="links p-4 bg-gray-400 bg-opacity-10 mt-5 rounded-md">
+    <h3 class="text-lg font-bold mt-0">Connect With Me</h3>
+    <a href="[your github link]" class="text-yellow-400 hover:text-yellow-500 mt-2">GitHub</a>
+    <a href="[your behance link]" class="text-yellow-400 hover:text-yellow-500 ml-5">Behance</a>
+  </div>
+</div>
 
   
-   <div className='border border-white rounded-md p-2 shadow-lg shadow-gray-500'>
-    <h3 class="text-xl font-bold mb-2 text-center">Education</h3>
-    <p class="mb-2">Thomas Jeff High School, Stanford University</p>
-    <p class="mb-2">Join Date: 12-09-2021</p>
-    <p class="mb-2">Organization: Themesberg LLC</p>
-    <p class="mb-2">Department: Marketing</p>
-   </div>
-   {/* <div className='border border-white rounded-md p-2 shadow-lg shadow-gray-500'>
-    <h3 class="text-xl font-bold mb-2 text-center">Education</h3>
-    <p class="mb-2">Thomas Jeff High School, Stanford University</p>
-    <p class="mb-2">Join Date: 12-09-2021</p>
-    <p class="mb-2">Organization: Themesberg LLC</p>
-    <p class="mb-2">Department: Marketing</p>
-   </div> */}
     </div> 
   </div>
 </div>
-          <div class="bg-black rounded-lg p-6 mt-8 shadow-md shadow-black border border-green-400">
+          <div class="bg-gray-950 rounded-lg p-6 mt-8 shadow-md shadow-black border border-green-400">
             <h2 class="text-2xl font-bold mb-4 text-white">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-              <button class="bg-green-700 text-white hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Brand Design</button>
-              <button class="bg-green-700 text-white hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Logo Design</button>
-              <button class="bg-green-700 text-white hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Mobile App Design</button>
-              <button class="bg-green-700 text-white hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">UI Design</button>
-              <button class="bg-green-700 text-white hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">React Developer</button>
-              <button class="bg-green-700 text-white hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Wordpress</button>
-              <button class="bg-green-700 text-white hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Sketch</button>
-              <button class="bg-green-700 text-white hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Figma</button>
-              <button class="bg-green-700 text-white hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Prototyping</button>
-              <button class="bg-green-700 text-white hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Database</button>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4  p-5 ">
+              <button class="bg-fuchsia-700  text-white font-semibold   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Brand Design</button>
+              <button class="bg-fuchsia-700  text-white font-semibold   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Logo Design</button>
+              <button class="bg-fuchsia-700  text-white font-semibold   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Mobile App Design</button>
+              <button class="bg-fuchsia-700  text-white font-semibold   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">UI Design</button>
+              <button class="bg-fuchsia-700  text-white font-semibold   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">React Developer</button>
+              <button class="bg-fuchsia-700  text-white font-semibold   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Wordpress</button>
+              <button class="bg-fuchsia-700  text-white font-semibold   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Sketch</button>
+              <button class="bg-fuchsia-700  text-white font-semibold   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Figma</button>
+              <button class="bg-fuchsia-700  text-white font-semibold   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Prototyping</button>
+              <button class="bg-fuchsia-700  text-white font-semibold   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4">Database</button>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             <div class="bg-black rounded-lg p-6 max-h-96 shadow-md shadow-black ">
                 <h2 class="text-2xl font-bold mb-4 text-white ">Previous Projects</h2>
                 <div class="overflow-y-auto h-64 grid grid-cols-1 scrollbar-hidden gap-4">
-                      <div class="bg-slate-600 text-white font-semibold flex justify-between focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">1. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
+                      <div class="bg-slate-600 text-white font-semibold flex justify-between focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">1. SwiftPay Mobile Wallet</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
                       <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">2. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
                       <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">3. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
                       <div class="bg-slate-600 text-white font-semibold flex justify-between hovergraygray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md py-2 px-4"><h2><a className='hover:underline' href="">4. Football</a></h2><h3>Ratings : ⭐⭐⭐</h3></div>
@@ -114,56 +152,34 @@ const Profile = () => {
             </div>
             <div class="bg-gray-900 rounded-lg p-6 mt-8 shadow-md shadow-black text-white">
                 <h2 class="text-2xl font-bold mb-4">Skills</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="flex items-center">
-                        <p class="font-bold mr-4">Figma</p>
-                        <div class="w-full bg-gray-300 rounded-full h-2">
-                            <div class="bg-blue-500 rounded-full h-2" style={{width: "75%"}}></div>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <p class="font-bold mr-4">Vue</p>
-                        <div class="w-full bg-gray-300 rounded-full h-2">
-                            <div class="bg-blue-500 rounded-full h-2" style={{width: "90%"}}></div>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <p class="font-bold mr-4">Php</p>
-                        <div class="w-full bg-gray-300 rounded-full h-2">
-                            <div class="bg-blue-500 rounded-full h-2" style={{width: "60%"}}></div>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <p class="font-bold mr-4">Marketing</p>
-                        <div class="w-full bg-gray-300 rounded-full h-2">
-                            <div class="bg-blue-500 rounded-full h-2" style={{width: "85%"}}></div>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <p class="font-bold mr-4">HTML</p>
-                        <div class="w-full bg-gray-300 rounded-full h-2">
-                            <div class="bg-blue-500 rounded-full h-2" style={{width: "80%"}}></div>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <p class="font-bold mr-4">Product Design</p>
-                        <div class="w-full bg-gray-300 rounded-full h-2">
-                            <div class="bg-blue-500 rounded-full h-2" style={{width: "95%"}}></div>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <p class="font-bold mr-4">React</p>
-                        <div class="w-full bg-gray-300 rounded-full h-2">
-                            <div class="bg-blue-500 rounded-full h-2" style={{width: "88%"}}></div>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <p class="font-bold mr-4">Angular</p>
-                        <div class="w-full bg-gray-300 rounded-full h-2">
-                            <div class="bg-blue-500 rounded-full h-2" style={{width: "70%"}}></div>
-                        </div>
-                    </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
+                  <div className='flex flex-row justify-around '>
+
+                
+                <div className='text-white bg-gray-800 rounded-lg '>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
+                    <h2 className='text-center font-bold'>Title 2</h2>
                 </div>
+                <div className='text-white'>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
+                    <h2 className='text-center font-bold'>Title 2</h2>
+                </div>
+                <div className='text-white'>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
+                    <h2 className='text-center font-bold'>Title 2</h2>
+                </div>
+                <div className='text-white'>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
+                    <h2 className='text-center font-bold'>Title 2</h2>
+                </div>
+                <div className='text-white'>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
+                    <h2 className='text-center font-bold'>Title 2</h2>
+                </div>
+               
+                </div>
+               
+            </div>
             </div>
         </div>
     </body>
@@ -172,4 +188,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default FreelancerProfile;

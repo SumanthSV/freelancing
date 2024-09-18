@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import * as THREE from 'three';
-import Blogs from '../Blogs';
+import Blogs from './Blogs';
 
 const Home = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -68,7 +68,7 @@ const Home = () => {
   };
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col overflow-x-hidden'>
       <div className="flex w-full justify-center items-center h-screen relative">
         {/* Three.js background */}
         <div id="three-background" className="absolute top-0 left-0 w-full h-full -z-10"></div>
@@ -76,19 +76,20 @@ const Home = () => {
         {/* Foreground content */}
         <div className="flex w-full mt-20 flex-col md:flex-row justify-evenly items-center">
           <div className="text-white min-h-screen w-8/12 flex flex-col items-center justify-center ">
-            <h1 className="text-5xl font-extrabold font-mono mb-4 text-center">
-              Effortlessly connect talent or exciting projects in just a few clicks
+            <h1 className="text-5xl  font-extrabold  mb-4 text-center">
+            <span className='text-blue-500'>Effortlessly</span> connect talent or exciting <span className='text-green-500'>projects</span>  in just a few clicks
             </h1>
-            <p className="text-lg mb-8 font-light text-center">
+            <p className="text-lg mb-8 font- text-center">
               A platform that connects freelancers with opportunities, offering secure transactions, AI-powered recommendations, and seamless project management.
             </p>
             <div className="flex space-x-4">
-              <button 
-                onClick={handleGetStartedClick} // Attach click handler
+              <a href="/freelancer_form"> <button 
+                 // Attach click handler
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl"
               >
                 Get started
-              </button>
+              </button></a>
+             
               <form>
                 <div className="flex items-center">
                   <input 
