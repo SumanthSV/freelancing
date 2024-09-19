@@ -69,12 +69,14 @@ const UserProfileForm = () => {
 
   return (
     <div className="min-h-screen bg-black flex items-center justify-center">
-    <div className="mt-20 max-w-4xl p-6 bg-gray-800 text-white rounded-lg shadow-lg">
-      <h1 className="text-3xl font-bold mb-6 text-white-400">Create User Profile</h1>
-      <form className="space-y-18" onSubmit={handleSubmit}>
+      <div className="mt-20 p-16 bg-gray-800 text-white rounded-lg shadow-lg w-[full]">
+        <h1 className="text-3xl font-bold mb-6 text-white-400">Create User Profile</h1>
+        <form className="space-y-18" onSubmit={handleSubmit}>
+          
           {currentStep === 1 && (
             <>
               <div className="space-y-4">
+                {/* Step 1: Basic Information */}
                 <div className="flex flex-col">
                   <label className="font-medium text-white-300">Name:</label>
                   <input
@@ -82,7 +84,7 @@ const UserProfileForm = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
                     required
                   />
                 </div>
@@ -93,7 +95,7 @@ const UserProfileForm = () => {
                     name="competence"
                     value={formData.competence}
                     onChange={handleChange}
-                    className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
                     required
                   />
                 </div>
@@ -104,7 +106,7 @@ const UserProfileForm = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
                     required
                   />
                 </div>
@@ -115,7 +117,7 @@ const UserProfileForm = () => {
                     name="location"
                     value={formData.location}
                     onChange={handleChange}
-                    className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
                     required
                   />
                 </div>
@@ -126,7 +128,7 @@ const UserProfileForm = () => {
                     name="phoneNumber"
                     value={formData.phoneNumber}
                     onChange={handleChange}
-                    className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
                     required
                   />
                 </div>
@@ -146,6 +148,7 @@ const UserProfileForm = () => {
           {currentStep === 2 && (
             <>
               <div className="space-y-4">
+                {/* Step 2: Additional Information */}
                 <div className="flex flex-col">
                   <label className="font-medium text-white-300">About Me (50 words):</label>
                   <textarea
@@ -170,7 +173,7 @@ const UserProfileForm = () => {
                     required
                   />
                 </div>
-
+                {/* Skills Section */}
                 <div className="space-y-4">
                   <h2 className="text-2xl font-semibold text-white">Skills</h2>
                   <div className="flex items-center space-x-2">
@@ -193,7 +196,7 @@ const UserProfileForm = () => {
                       onClick={handleAddSkill}
                       className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-300"
                     >
-                    Add Skill
+                      Add Skill
                     </button>
                   </div>
                   {formData.skills.length > 0 && (
@@ -202,72 +205,6 @@ const UserProfileForm = () => {
                         <li key={index} className="p-3 border border-white-600 rounded-lg bg-gray-700">
                           <p><strong>Skill:</strong> {skill.name}</p>
                           <p><strong>Percentage:</strong> {skill.percentage}%</p>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-
-                <div className="space-y-4">
-                  <h2 className="text-2xl font-semibold text-white-400">Previous Projects</h2>
-                  <div className="flex items-center space-x-2">
-                    <input
-                      type="text"
-                      placeholder="Project name"
-                      value={currentProject.name}
-                      onChange={(e) => setCurrentProject({ name: e.target.value })}
-                      className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    <button
-                      type="button"
-                      onClick={handleAddProject}
-                      className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-300"
-                    >
-                      Add Project
-                    </button>
-                  </div>
-                  {formData.previousProjects.length > 0 && (
-                    <ul className="space-y-2">
-                      {formData.previousProjects.map((project, index) => (
-                        <li key={index} className="p-3 border border-blue-600 rounded-lg bg-gray-700">
-                          <p><strong>Project:</strong> {project.name}</p>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-
-                <div className="space-y-4">
-                  <h2 className="text-2xl font-semibold text-white-400">Work History</h2>
-                  <div className="flex items-center space-x-2">
-                    <input
-                      type="text"
-                      placeholder="Job Title"
-                      value={currentWork.jobTitle}
-                      onChange={(e) => setCurrentWork({ ...currentWork, jobTitle: e.target.value })}
-                      className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Company"
-                      value={currentWork.company}
-                      onChange={(e) => setCurrentWork({ ...currentWork, company: e.target.value })}
-                      className="p-3 border border-blue-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    <button
-                      type="button"
-                      onClick={handleAddWork}
-                      className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-300"
-                    >
-                      Add Work
-                    </button>
-                  </div>
-                  {formData.workHistory.length > 0 && (
-                    <ul className="space-y-2">
-                      {formData.workHistory.map((work, index) => (
-                        <li key={index} className="p-3 border border-blue-600 rounded-lg bg-gray-700">
-                          <p><strong>Job Title:</strong> {work.jobTitle}</p>
-                          <p><strong>Company:</strong> {work.company}</p>
                         </li>
                       ))}
                     </ul>

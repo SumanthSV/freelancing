@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import * as THREE from 'three';
 import Blogs from './Blogs';
+import Footer from './Footer';
+import Top_textimonials from './Top_textimonials';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -66,7 +70,9 @@ const Home = () => {
   const handleGetStartedClick = () => {
     navigate('/freelancer_form'); // Replace '/new-page' with the route you want to navigate to
   };
-
+  useEffect(()=>{
+    AOS.init({duration:3000})
+    },[])
   return (
     <div className='flex flex-col overflow-x-hidden'>
       <div className="flex w-full justify-center items-center h-screen relative">
@@ -75,27 +81,27 @@ const Home = () => {
 
         {/* Foreground content */}
         <div className="flex w-full mt-20 flex-col md:flex-row justify-evenly items-center">
-          <div className="text-white min-h-screen w-8/12 flex flex-col items-center justify-center ">
-            <h1 className="text-5xl  font-extrabold  mb-4 text-center">
-            <span className='text-blue-500'>Effortlessly</span> connect talent or exciting <span className='text-green-500'>projects</span>  in just a few clicks
+          <div className="text-white min-h-screen w-8/12 flex flex-col items-center justify-center">
+            <h1  className="text-[2.8rem] font-extrabold mb-4 text-center home_heading_font animate-slide-in-left">
+              <span data-aos="fade-right" className="text-blue-600">Effortlessly</span> connect talent or exciting projects in just a few clicks
             </h1>
-            <p className="text-lg mb-8 font- text-center">
-              A platform that connects freelancers with opportunities, offering secure transactions, AI-powered recommendations, and seamless project management.
+
+            <p className="text-lg mb-8 text-center home_subheading_font animate-slide-in-left-delayed">
+             <span data-aos="fade-up" > A platform that connects freelancers with opportunities, offering secure transactions, AI-powered recommendations, and seamless project management </span>.
             </p>
+
             <div className="flex space-x-4">
-              <a href="/freelancer_form"> <button 
-                 // Attach click handler
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl"
-              >
-                Get started
-              </button></a>
-             
+              <a href="/freelancer_form">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl">
+                  Get started
+                </button>
+              </a>
               <form>
                 <div className="flex items-center">
-                  <input 
-                    type="text" 
-                    className="bg-gray-800 text-white rounded-2xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                    placeholder="Quick search..." 
+                  <input
+                    type="text"
+                    className="bg-gray-800 text-white rounded-2xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Quick search..."
                   />
                 </div>
               </form>
@@ -104,6 +110,8 @@ const Home = () => {
         </div>
       </div>
       <Blogs />
+      <Footer />
+      <Top_textimonials />
     </div>
   );
 };

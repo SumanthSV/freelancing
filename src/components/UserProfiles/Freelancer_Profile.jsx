@@ -33,7 +33,16 @@ const FreelancerProfile = () => {
     <p class="mb-2"> <h1 className='font-bold'>Email : </h1> Sumanth@gmail.com</p>
     <p class="mb-2"> <h1 className='font-bold'>Location</h1>Davanagere, Karantaka</p>
     <p class="mb-2"> <h1 className='font-bold'>Ph no : </h1>+91-123456789</p>
-    <p class="mb-2"> <h1 className='font-blod' >Ratings : </h1> ⭐⭐⭐⭐⭐</p>
+    <p class="mb-2"> <h1 className='font-bold' >Ratings : </h1> ⭐⭐⭐⭐⭐</p>
+    <p className="mb-2">
+  <h1 className="font-bold">Hobbies:</h1>
+  <ul className=" ml-2 flex flex-wrap gap-4 mt-2">
+    <li className=" rounded-md px-2 bg-gray-800 p-1 w-fit">Travelling</li>
+    <li className=" rounded-md px-2 bg-gray-800 p-1 w-fit">Reading books</li>
+    <li className=" rounded-md px-2 bg-gray-800 p-1 w-fit">Badminton</li>
+    <li className=" rounded-md px-2 bg-gray-800 p-1 w-fit">Designing</li>
+  </ul>
+</p>
 
     <div class="flex items-center">
       
@@ -152,30 +161,33 @@ const FreelancerProfile = () => {
               </div>
             </div>
             <div class="bg-gray-900 rounded-lg p-6 mt-8 shadow-md shadow-black text-white">
-                <h2 class="text-2xl font-bold mb-4 text-tranparent bg-cli">Certifications</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
-                  <div className='flex flex-row justify-around '>
+                <h2 class="text-2xl font-bold mb-4 text-tranparent bg-clip-text">Certifications</h2>
+                <div class="grid grid-cols-1 md:grid-cols-1 gap-4 p-5">
+                  <div className='flex flex-row justify-around gap-2'>
 
                 
-                <div className='text-white bg-gray-800 rounded-lg '>
+                <div className='text-white bg-gray-800 rounded-lg p-2 flex flex-col  items-center w-2/12'>
                     <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
-                    <h2 className='text-center font-bold'>Title 2</h2>
+                    <h2 className='text-center font-bold mt-2'>Certified Ethical Hacker</h2>
+                </div><div className='text-white bg-gray-800 rounded-lg p-2 flex flex-col  items-center w-2/12'>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
+                    <h2 className='text-center font-bold mt-2'>AWS Certified Solutions Architect</h2>
                 </div>
-                <div className='text-white'>
+                <div className='text-white bg-gray-800 rounded-lg p-3 flex flex-col  items-center w-2/12'>
                     <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
-                    <h2 className='text-center font-bold'>Title 2</h2>
+                    <h2 className='text-center font-bold mt-2'>Project Management Professional</h2>
                 </div>
-                <div className='text-white'>
+                <div className='text-white bg-gray-800 rounded-lg p-3 text-center flex flex-col  items-center w-2/12'>
                     <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
-                    <h2 className='text-center font-bold'>Title 2</h2>
+                    <h2 className='text-center font-bold mt-2'>Google Data Analytics</h2>
                 </div>
-                <div className='text-white'>
+                <div className='text-white bg-gray-800 rounded-lg p-3 flex flex-col  items-center w-2/12'>
                     <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
-                    <h2 className='text-center font-bold'>Title 2</h2>
+                    <h2 className='text-center font-bold mt-2'>Certified Information Systems</h2>
                 </div>
-                <div className='text-white'>
+                <div className='text-white bg-gray-800 rounded-lg p-3 flex flex-col  items-center w-2/12'>
                     <img src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png" alt="" />
-                    <h2 className='text-center font-bold'>Title 2</h2>
+                    <h2 className='text-center font-bold mt-2'>Front End development</h2>
                 </div>
                
                 </div>

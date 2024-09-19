@@ -3,11 +3,9 @@ const Signup = () => {
         <div className="bg-black">
             <div className="flex flex-col items-center justify-center min-h-screen px-6 py-12 lg:px-8">
                 <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-md">
-                    <a href="/">
-                        <h3 className="text-center text-4xl font-bold text-blue-600 dark:text-blue-400">
-                            Logo
+                        <h3 className="text-center text-[2rem] font-bold text-white ">
+                            Register
                         </h3>
-                    </a>
                 </div>
                 <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-md bg-white dark:bg-gray-900 rounded-xl shadow-lg backdrop-blur-md border border-gray-200 dark:border-transparent p-8">
                     <form>

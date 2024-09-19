@@ -8,9 +8,11 @@ import ProjectList from './components/Projects/Project_List';
 import ProjectDetails from './components/Projects/Project_Details';
 import Footer from './components/Basepages/Footer';
 import Threee from './components/Basepages/Threee';
+import Example from './components/Example';
 import FreelancerProfile from './components/UserProfiles/Freelancer_Profile';
 import Services from './components/Basepages/Services'
 import UserProfileForm from './components/UserProfiles/Freelancer_form'
+import Home2 from './components/Home2'
 
 import { Routes  ,BrowserRouter as Router , Route } from 'react-router-dom';
 
@@ -20,6 +22,7 @@ function App() {
       <Router>
 
         <Navbar/>
+        {/* <Example/> */}
         {/* <Threee/> */}
         <Routes>
           <Route path='/' element={<Home/>} />
@@ -32,6 +35,7 @@ function App() {
           <Route path='/footer' element={<Footer/>}/>
           <Route path='/services' element={<Services/>}/>
           <Route path='/freelancer_form' Component={UserProfileForm} />
+          <Route path='/home2' Component={Home2}/>
         </Routes>
         </Router>
     </>
