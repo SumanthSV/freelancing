@@ -20,8 +20,8 @@ const Navbar = () => {
             className="h-8 rounded-md"
             alt="Logo"
           />
-          <span className="self-center font-mono ml-2 text-3xl font-semibold whitespace-nowrap dark:text-white">
-            <span className="font-serif text-blue-500 font-extrabold">Pay</span>lance
+          <span className="self-center font-serif ml-2 text-3xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="font-sans text-blue-500 font-extrabold">T</span>alentNet
           </span>
         </div>
           
