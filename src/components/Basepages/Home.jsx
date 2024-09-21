@@ -83,7 +83,7 @@ const Home = () => {
         <div className="flex w-full mt-20 flex-col md:flex-row justify-evenly items-center">
           <div className="text-white min-h-screen w-8/12 flex flex-col items-center justify-center">
             <h1  className="text-[2.8rem] font-extrabold mb-4 text-center home_heading_font animate-slide-in-left">
-              <span data-aos="fade-right" className="text-blue-600">Effortlessly</span> connect talent or exciting projects in just a few clicks
+              <span data-aos="fade-right" className="text-blue-600">Effortlessly</span> connect talent with exciting projects in just a few clicks
             </h1>
 
             <p className="text-lg mb-8 text-center home_subheading_font animate-slide-in-left-delayed">
@@ -110,8 +110,8 @@ const Home = () => {
         </div>
       </div>
       <Blogs />
-      <Footer />
       <Top_textimonials />
+      <Footer />
     </div>
   );
 };

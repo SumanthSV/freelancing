@@ -1,13 +1,14 @@
 import React from 'react';
+import cert from "../Basepages/Certificate.jpg";
 
 const items = [
-  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 1' },
-  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 2' },
-  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 3' },
-  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 3' },
-  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 3' },
-  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 3' },
-  { image: 'https://cdn-icons-png.flaticon.com/128/3270/3270465.png', title: 'Title 3' },
+  { image: cert, title: 'Title 1' },
+  { image: cert, title: 'Title 2' },
+  { image: cert, title: 'Title 3' },
+  { image: cert, title: 'Title 3' },
+  { image: cert, title: 'Title 3' },
+  { image: cert, title: 'Title 3' },
+  { image: cert, title: 'Title 3' },
   // Add more items here...
 ];
 
@@ -21,7 +22,7 @@ const FreelancerProfile = () => {
             <img className='w-10 ml-2 rounded-full p-1 border border-white' src="https://cdn-icons-png.flaticon.com/128/3270/3270465.png"alt="Master" />
             {/* <h2 className='text-white font-bold text-md mb-2 ml-2'> Master</h2> */}
             </div>
-
+            
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-5">
 <div class='user-info' className=''>
 <div class=" rounded-lg p-6 shadow-md text-white -shadow-green-600 col-span-1 border-4 border-green-500">
